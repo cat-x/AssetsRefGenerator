@@ -1,19 +1,27 @@
 <idea-plugin>
-  <id>com.shenyong.flutter.refgenerator</id>
-  <name>Flutter Assets Ref Generator</name>
-  <vendor email="shenyong812@gmail.com" url="https://github.com/AndrewShen812/AssetsRefGenerator">Andrew Shen</vendor>
+  <id>xyz.ciyuan.flutter.refgenerator</id>
+  <name>Flutter Assets Ref Generator 2</name>
+  <vendor email="a599231042@163.com" url="https://github.com/cat-x/AssetsRefGenerator">Vince Cat</vendor>
 
   <description><![CDATA[
   <div>
     Makes it easier to use and preview assets in <a href="https://flutter.dev/">Flutter</a> project. Just like using R.drawable.xxx in Android!
-    <a href="https://github.com/AndrewShen812/AssetsRefGenerator/blob/master/README.md">Usage demonstrate</a>.
+    <a href="https://github.com/cat-x/AssetsRefGenerator/blob/master/README.md">Usage demonstrate</a>.
   </div>
+
 
   <br/>
   <P>
     <b>
-      <a href="https://github.com/AndrewShen812/AssetsRefGenerator">GitHub</a> |
-      <a href="https://github.com/AndrewShen812/AssetsRefGenerator/blob/master/README_zh.md">中文文档</a>
+      <a href="https://github.com/cat-x/AssetsRefGenerator">OriginalAuthor's GitHub</a> |
+    </b>
+  </P>
+
+  <br/>
+  <P>
+    <b>
+      <a href="https://github.com/cat-x/AssetsRefGenerator">GitHub</a> |
+      <a href="https://github.com/cat-x/AssetsRefGenerator/blob/master/README_zh.md">中文文档</a>
     </b>
   </P>
 
@@ -101,9 +109,9 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="FlutterAssetsRefGenerator"
+    <action id="FlutterAssetsRefGenerator2"
             class="com.shenyong.flutter.AssetsRefGenerator"
-            text="Generate Flutter Assets Reference"
+            text="Generate Flutter Assets Reference 2"
             description="Flutter assets ref generator"
             icon="/icons/genAssetRef.svg">
       <add-to-group group-id="ToolbarRunGroup" anchor="last"/>

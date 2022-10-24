@@ -72,7 +72,7 @@ public class FlutterAssetReference extends PsiReferenceBase<PsiElement> implemen
         String pattern = "^" + fileName.toLowerCase() + "$";
         if (!fileName.contains(".")) {
             // 当前的引用字符串无后缀
-            pattern = "^" + fileName.toLowerCase() + "(.(jp(e)?g|(9.)?png|webp|bmp))?$";
+            pattern = "^" + fileName.toLowerCase() + "(.(jp(e)?g|(9.)?png|webp|bmp|svg))?$";
         }
         return ((PsiBinaryFile) element).getVirtualFile().getName().toLowerCase().matches(pattern);
     }

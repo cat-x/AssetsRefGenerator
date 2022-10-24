@@ -4,14 +4,8 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;
-import com.intellij.psi.PsiManager;
 import com.intellij.psi.search.FilenameIndex;
 import com.intellij.psi.search.ProjectScope;
-import com.intellij.psi.util.PsiTreeUtil;
-import org.jetbrains.yaml.psi.impl.YAMLFileImpl;
-import org.jetbrains.yaml.psi.impl.YAMLPlainTextImpl;
-
-import java.util.Collection;
 
 public class AssetUtil {
     public static VirtualFile[] getAssetVirtualFile(PsiElement psiElement) {
@@ -60,6 +54,10 @@ public class AssetUtil {
             return files;
         }
         files = FilenameIndex.getFilesByName(project, nameWithoutSuffix + ".bmp", ProjectScope.getProjectScope(project));
+        if (files.length > 0) {
+            return files;
+        }
+        files = FilenameIndex.getFilesByName(project, nameWithoutSuffix + ".svg", ProjectScope.getProjectScope(project));
         if (files.length > 0) {
             return files;
         }
